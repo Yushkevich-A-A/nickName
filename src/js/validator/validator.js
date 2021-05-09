@@ -4,7 +4,7 @@ export class Validator {
   }
 
   validateUsername(data) {
-    if (/^[A-Za-z][-\w]*[A-Za-z]$/.test(data) && !/\d{3,}/.test(data)) {
+    if (/^[A-Za-z][-\w]*[A-Za-z]$/.test(data) && !/\d{4,}/.test(data)) {
       this.name = data;
       return true;
     }

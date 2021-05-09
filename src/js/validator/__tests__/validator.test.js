@@ -42,7 +42,7 @@ test('передано значение, оканчивающееся на -', (
   expect(() => new Validator(str)).toThrow();
 });
 
-test('передано значение с темя цифрами подряд', () => {
-  const str = 'Doctor-123Van_Helsing';
+test('передано значение с четырьмя цифрами подряд', () => {
+  const str = 'Doctor-1233Van_Helsing';
   expect(() => new Validator(str)).toThrow();
 });
